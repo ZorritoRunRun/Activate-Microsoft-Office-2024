@@ -1,0 +1,8 @@
+cd /d %ProgramFiles%/Microsoft Office/Office16
+cd /d %ProgramFiles(x86)%/Microsoft Office/Office16
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2024PreviewVL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:TX3T2 >nul
+cscript ospp.vbs /inpkey:2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2
+cscript ospp.vbs /sethst:kms.digiboy.ir
+cscript ospp.vbs /act
